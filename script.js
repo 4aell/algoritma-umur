@@ -1,13 +1,31 @@
-function showSection(sectionId){
+function showSection(id, button = null){
 
-    // ambil semua section
-    const sections = document.querySelectorAll('.section');
+    // SEMBUNYIKAN SEMUA SECTION
+    const sections =
+    document.querySelectorAll('.section');
 
-    // sembunyikan semua
     sections.forEach(section => {
+
         section.classList.remove('active');
+
     });
 
-    // tampilkan section yang dipilih
-    document.getElementById(sectionId).classList.add('active');
+    // TAMPILKAN SECTION TERPILIH
+    document.getElementById(id)
+    .classList.add('active');
+
+    // ACTIVE SIDEBAR
+    if(button){
+
+        const buttons =
+        document.querySelectorAll('.nav-btn');
+
+        buttons.forEach(btn => {
+
+            btn.classList.remove('active-btn');
+
+        });
+
+        button.classList.add('active-btn');
+    }
 }

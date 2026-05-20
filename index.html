@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Studi Kasus Algoritma Python</title>
+    <title>Algoritma Pemograman</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,15 +15,23 @@
     <!-- SIDEBAR -->
     <aside class="sidebar">
 
-        <h2>Studi Kasus Umur</h2>
+        <h2>Algoritma Pemograman</h2>
 
-        <button onclick="showSection('home')">Home</button>
-        <button onclick="showSection('deskripsi')">Deskripsi</button>
-        <button onclick="showSection('algoritma')">Algoritma</button>
-        <button onclick="showSection('flowchart')">Flowchart</button>
-        <button onclick="showSection('pseudocode')">Pseudocode</button>
-        <button onclick="showSection('python')">Python Code</button>
-        <button onclick="showSection('output')">Output</button>
+        <!-- MENU UTAMA -->
+        <button class="nav-btn active-btn"
+        onclick="showSection('home', this)">
+        Home
+        </button>
+
+        <button class="nav-btn"
+        onclick="showSection('menu-studi-kasus', this)">
+        Studi Kasus
+        </button>
+
+        <button class="nav-btn"
+        onclick="showSection('menu-perulangan', this)">
+        Tugas Perulangan
+        </button>
 
     </aside>
 
@@ -35,23 +43,141 @@
 
             <div class="hero">
 
-                <h1>Program Menghitung Umur Berdasarkan Tahun Lahir</h1>
-            
+                <h1>Algoritma Pemograman</h1>
+
                 <p>
-                 Website studi kasus tugas algoritma pemrograman
-                menggunakan bahasa Python.
+                    Website kumpulan tugas algoritma pemrograman
+                    menggunakan bahasa Python.
                 </p>
 
                 <br>
 
                 <p><b>Nama :</b> Raffael Augustian Fathir</p>
                 <p><b>NIM :</b> 250403010001</p>
+                <p><b>Prodi :</b> Teknik Informatika</p>
+
+                <br><br>
+
+        <!-- MENU CARD -->
+            <div class="menu-card-container">
+
+        <!-- STUDI KASUS -->
+            <div class="menu-card"
+                 onclick="showSection('menu-studi-kasus')">
+
+                <h2>1. Studi Kasus</h2>
+
+                 <p>
+                    Program menghitung umur menggunakan Python.
+                </p>
+
+            </div>
+
+        <!-- PERULANGAN -->
+                    <div class="menu-card"
+                         onclick="showSection('menu-perulangan')">
+
+                        <h2>2. Tugas Perulangan</h2>
+
+                        <p>
+                            FOR, WHILE, DO-WHILE dan Nested Loop.
+                         </p>
+
+                     </div>
+
+                </div>
+
+            </div>
+        
+        </section>
+
+            <!-- MENU STUDI KASUS -->
+        <section id="menu-studi-kasus" class="section">
+
+            <div class="card">
+
+                <h1>Studi Kasus</h1>
+
+                <p>
+                Pilih materi studi kasus yang ingin dilihat.
+                </p>
+
+                <br>
+
+                <button onclick="showSection('deskripsi')">
+                Deskripsi Program
+                </button>
+
+                <button onclick="showSection('algoritma')">
+                Algoritma
+                </button>
+
+                <button onclick="showSection('flowchart')">
+                Flowchart
+                </button>
+
+                <button onclick="showSection('pseudocode')">
+                Pseudocode
+                </button>
+
+             <button onclick="showSection('python')">
+             Program Python
+                </button>
+
+                <button onclick="showSection('output')">
+             Output Program
+             </button>
+
+                <br><br>
+
+                <button onclick="showSection('home')">
+                Kembali ke Home
+                </button>
 
             </div>
 
         </section>
 
-        <!-- DESKRIPSI -->
+            <!-- MENU PERULANGAN -->
+        <section id="menu-perulangan" class="section">
+
+    <div class="card">
+
+        <h1>Tugas Perulangan</h1>
+
+        <p>
+            Pilih materi perulangan Python.
+        </p>
+
+        <br>
+
+        <button onclick="showSection('for')">
+            Perulangan FOR
+        </button>
+
+        <button onclick="showSection('while')">
+            Perulangan WHILE
+        </button>
+
+        <button onclick="showSection('dowhile')">
+            Perulangan DO-WHILE
+        </button>
+
+        <button onclick="showSection('nested')">
+            Nested Loop
+        </button>
+
+        <br><br>
+
+        <button onclick="showSection('home')">
+            Kembali ke Home
+        </button>
+
+    </div>
+
+        </section>
+
+            <!-- DESKRIPSI -->
         <section id="deskripsi" class="section">
 
             <div class="card">
@@ -62,6 +188,10 @@
                     Program ini digunakan untuk menghitung umur seseorang berdasarkan tahun lahir yang dimasukkan oleh pengguna. Pengguna diminta memasukkan nama dan tahun lahir, kemudian program akan menghitung umur berdasarkan tahun sekarang yaitu 2026.
                     Program dibuat menggunakan algoritma skuensial, yaitu langkah-langkah program dijalankan secara berurutan mulai dari input, proses, hingga output.
                 </p>
+
+                <button onclick="showSection('menu-studi-kasus')">
+                    Kembali
+                </button>
 
             </div>
 
@@ -83,7 +213,9 @@
                     <li>Tampilkan hasil</li>
                     <li>Selesai</li>
                 </ol>
-
+                <button onclick="showSection('menu-studi-kasus')">
+                    Kembali
+                </button>
             </div>
 
         </section>
@@ -96,7 +228,9 @@
                 <h2>Flowchart</h2>
 
                 <img src="flowchart.png">
-
+                <button onclick="showSection('menu-studi-kasus')">
+                    Kembali
+                </button>
             </div>
 
         </section>
@@ -123,7 +257,9 @@ OUTPUT umur
 
 END
 </pre>
-
+                <button onclick="showSection('menu-studi-kasus')">
+                    Kembali
+                </button>
             </div>
 
         </section>
@@ -147,7 +283,9 @@ umur = tahun_sekarang - tahun_lahir
 
 print("Umur :", umur)
 </pre>
-
+                <button onclick="showSection('menu-studi-kasus')">
+                    Kembali
+                </button>
             </div>
 
         </section>
@@ -167,6 +305,196 @@ Masukkan tahun lahir : 2004
 Nama : Mulyono
 Umur : 22 tahun
 </pre>
+                <button onclick="showSection('menu-studi-kasus')">
+                    Kembali
+                </button>
+            </div>
+
+        </section>
+
+        <!-- FOR -->
+        <section id="for" class="section">
+
+            <div class="card">
+
+              <h1>Perulangan FOR</h1>
+
+                <p>
+                    Perulangan FOR digunakan untuk mengulang
+                    suatu proses dengan jumlah perulangan tertentu.
+                </p>
+
+                <br>
+
+<pre>
+print("Perulangan FOR")
+
+for i in range(1, 11):
+    print(i)
+</pre>
+
+        <br>
+
+        <h2>Output</h2>
+
+<pre>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+
+                <br>
+
+                <button onclick="showSection('menu-perulangan')">
+                    Kembali
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- WHILE -->
+        <section id="while" class="section">
+
+            <div class="card">
+
+                <h1>Perulangan WHILE</h1>
+
+                <p>
+                    Perulangan WHILE digunakan untuk mengulang
+                    program selama kondisi bernilai TRUE.
+                </p>
+
+                <br>
+
+<pre>
+print("Perulangan WHILE")
+
+i = 1
+
+while i <= 10:
+    print(i)
+    i += 1
+</pre>
+
+        <br>
+
+        <h2>Output</h2>
+
+<pre>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+
+                <br>
+
+                <button onclick="showSection('menu-perulangan')">
+                    Kembali
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- DO WHILE -->
+        <section id="dowhile" class="section">
+
+            <div class="card">
+
+                <h1>Perulangan DO-WHILE</h1>
+
+                <p>
+                    Python tidak memiliki do-while asli,
+                    sehingga dibuat menggunakan while True.
+                </p>
+
+                <br>
+
+<pre>
+while True:
+
+    password = input("Masukkan Password : ")
+
+    if password == "admin":
+        print("Password Benar")
+        break
+
+    print("Password Salah")
+</pre>
+
+        <br>
+
+        <h2>Output</h2>
+
+<pre>
+Masukkan Password : admin
+Password Benar
+</pre>
+
+                <br>
+
+                <button onclick="showSection('menu-perulangan')">
+                    Kembali
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- NESTED LOOP -->
+        <section id="nested" class="section">
+
+            <div class="card">
+
+                <h1>Nested Loop</h1>
+
+                <p>
+                    Nested Loop adalah perulangan di dalam perulangan.
+                </p>
+
+                <br>
+
+<pre>
+for i in range(5):
+
+    for j in range(5):
+        print("*", end=" ")
+
+    print()
+</pre>
+
+        <br>
+
+        <h2>Output</h2>
+
+<pre>
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+</pre>
+
+                <br>
+
+                <button onclick="showSection('menu-perulangan')">
+                    Kembali
+                </button>
 
             </div>
 
@@ -174,6 +502,18 @@ Umur : 22 tahun
 
     </main>
 
+    <footer>
+
+    <p>
+        © 2026 Algoritma Pemograman
+    </p>
+
+    <p>
+        Created by Raffael Augustian Fathir
+    </p>
+
+</footer>
+    
     <script src="script.js"></script>
 
 </body>
