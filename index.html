@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Studi Kasus Algoritma Python</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <h2>Studi Kasus Umur</h2>
+
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('deskripsi')">Deskripsi</button>
+        <button onclick="showSection('algoritma')">Algoritma</button>
+        <button onclick="showSection('flowchart')">Flowchart</button>
+        <button onclick="showSection('pseudocode')">Pseudocode</button>
+        <button onclick="showSection('python')">Python Code</button>
+        <button onclick="showSection('output')">Output</button>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- HOME -->
+        <section id="home" class="section active">
+
+            <div class="hero">
+
+                <h1>Program Menghitung Umur Berdasarkan Tahun Lahir</h1>
+            
+                <p>
+                 Website studi kasus tugas algoritma pemrograman
+                menggunakan bahasa Python.
+                </p>
+
+                <br>
+
+                <p><b>Nama :</b> Raffael Augustian Fathir</p>
+                <p><b>NIM :</b> 250403010001</p>
+
+            </div>
+
+        </section>
+
+        <!-- DESKRIPSI -->
+        <section id="deskripsi" class="section">
+
+            <div class="card">
+
+                <h2>Deskripsi Program</h2>
+
+                <p>
+                    Program ini digunakan untuk menghitung umur seseorang berdasarkan tahun lahir yang dimasukkan oleh pengguna. Pengguna diminta memasukkan nama dan tahun lahir, kemudian program akan menghitung umur berdasarkan tahun sekarang yaitu 2026.
+                    Program dibuat menggunakan algoritma skuensial, yaitu langkah-langkah program dijalankan secara berurutan mulai dari input, proses, hingga output.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ALGORITMA -->
+        <section id="algoritma" class="section">
+
+            <div class="card">
+
+                <h2>Algoritma</h2>
+
+                <ol>
+                    <li>Mulai</li>
+                    <li>Input nama pengguna</li>
+                    <li>Input tahun lahir</li>
+                    <li>Tentukan tahun sekarang</li>
+                    <li>Hitung umur</li>
+                    <li>Tampilkan hasil</li>
+                    <li>Selesai</li>
+                </ol>
+
+            </div>
+
+        </section>
+
+        <!-- FLOWCHART -->
+        <section id="flowchart" class="section">
+
+            <div class="card">
+
+                <h2>Flowchart</h2>
+
+                <img src="flowchart.png">
+
+            </div>
+
+        </section>
+
+        <!-- PSEUDOCODE -->
+        <section id="pseudocode" class="section">
+
+            <div class="card">
+
+                <h2>Pseudocode</h2>
+
+<pre>
+START
+
+INPUT nama
+INPUT tahun_lahir
+
+tahun_sekarang = 2026
+
+umur = tahun_sekarang - tahun_lahir
+
+OUTPUT nama
+OUTPUT umur
+
+END
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- PYTHON -->
+        <section id="python" class="section">
+
+            <div class="card">
+
+                <h2>Program Python</h2>
+
+<pre>
+# Program Menghitung Umur
+
+nama = input("Masukkan nama : ")
+tahun_lahir = int(input("Masukkan tahun lahir : "))
+
+tahun_sekarang = 2026
+
+umur = tahun_sekarang - tahun_lahir
+
+print("Umur :", umur)
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- OUTPUT -->
+        <section id="output" class="section">
+
+            <div class="card">
+
+                <h2>Contoh Output</h2>
+
+<pre>
+Masukkan nama : Mulyono
+Masukkan tahun lahir : 2004
+
+ HASIL 
+Nama : Mulyono
+Umur : 22 tahun
+</pre>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
